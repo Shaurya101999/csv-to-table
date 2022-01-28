@@ -1,0 +1,33 @@
+<div style="text-align: center;">
+    <div style="background-color: aliceblue; text-align: center; border-radius: 10px; display: inline-block; padding: 2vw;">
+        <form action="/submit" enctype="multipart/form-data" method="post">
+            <strong> Upload File : </strong>
+            <input type="file" name="file" id="" accept=".csv"><br><br>
+            <button type="submit" class="btn btn-outline-success">Submit</button>
+        </form>
+    </div>
+</div>
+<!-- <%=files%> <br> -->
+<div class="container">
+    <br><br>
+    <table class="table ">
+        <!-- table-bordered -->
+        <tr>
+            <th>Name</th>
+            <th>Path</th>
+            <th>Created On</th>
+        </tr>
+
+    
+        <% for(i of files){ %>
+            <tr>
+                <td><a href="/file/open/?path=<%= i.path %>"><%= i.name%></a> </td>
+                <td><%= i.path%> </td>
+                <td><%= i.createdAt%> </td>
+            </tr>
+        <%}%>
+    </table>
+</div>
+<script>
+    
+</script>

@@ -1,0 +1,5 @@
+name,email,batch,college,dsa_marks,web_dev_marks,react_marks,placement_status,company1,company1result,company2,company2result
+RITIKA DIVEKAR,ritikadivekar29@gmail.com,1,abc,80,80,80,Placed,xoriant,Absent,W,Pass
+xoriant,abc@gmail.com,2,abc,40,50,10,Not Placed,,,,
+a,a@gmail.com,1,abc,100,100,100,Placed,xoriant,Pass,W,Fail
+RITIKA DIVEKAR,varma.shaurya1999@gmail.com,1,Lakshmi Narain College of Technology Excellence  Bhopal,1,1,1,Placed,,,,
