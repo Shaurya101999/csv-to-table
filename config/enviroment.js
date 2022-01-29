@@ -11,4 +11,4 @@ const production = {
 }
 // console.log(eval(process.env.NODE_ENV)+' '+process.env.PLACEMENT_CELL_SESSION_COOKIE_KEY);
 
-module.exports = eval(process.env.NODE_ENV) == undefined ? development : eval(process.env.PLACEMENT_ENVIROMENT);
+module.exports = eval(process.env.NODE_ENV) == undefined ? development : eval(process.env.NODE_ENV);
