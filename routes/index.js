@@ -4,7 +4,6 @@ const router = express.Router();
 const upload = require('../config/multer');
 
 router.get('/', homeController.home);
-// router.get('/open', homeController.open);
 router.use('/file', require('./file') );
 router.post('/submit',upload.single('file'), homeController.submit);
 

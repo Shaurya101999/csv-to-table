@@ -3,6 +3,7 @@ const port = process.env.PORT || 8000 ;
 const app = express() ;
 const env = require('./config/enviroment');
 
+
 const bodyParser = require('body-parser') ;
 
 const expressLayouts = require('express-ejs-layouts') ;
@@ -28,6 +29,8 @@ app.set('views','./views');
 
 app.use(express.static(__dirname+'/'+ env.asset_path));
 app.use('/',require('./routes'));
+
+require('heroku-self-ping').default("https://csv-beautifier.herokuapp.com/");
 
 app.listen(port, (err)=>{
     if(err){
