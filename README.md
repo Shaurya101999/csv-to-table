@@ -14,3 +14,8 @@ clone or download the repository, install all dependencies with the help of pack
 Change the database name or add url from mongo atlas in config -> enviroment.js
 
 start by npm start
+
+
+Drawbacks :
+Since I have used bubble sort to sort the table elements sorting fails for large data 
+
