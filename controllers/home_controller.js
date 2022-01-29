@@ -1,7 +1,7 @@
 const File = require('../models/file');
 const path = require('path');
 
-
+// uploading file and saving its address in db 
 module.exports.submit = (req, res)=>{
     // console.log(req);
     // console.log(req.body.file);
@@ -21,6 +21,7 @@ module.exports.submit = (req, res)=>{
     res.redirect('back');
 } 
 
+// displaying home page with all uploaded files
 module.exports.home = (req, res) => {
     let files = File.find({}, (err, files)=>{
         if(err){

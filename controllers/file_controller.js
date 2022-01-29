@@ -3,6 +3,8 @@ const File = require('../models/file');
 var fs = require('fs'); 
 var {parse} = require('csv-parse');
 
+
+// going to path where csv is saved and reading it and sending to table.ejs
 module.exports.open = (req, res)=>{
     let checkHeader = 0; 
     let path = req.query.path;

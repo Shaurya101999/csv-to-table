@@ -1,6 +1,6 @@
 // for pagination
 var current_page = 1;
-var records_per_page = 25;
+var records_per_page = 50;
 var l = document.getElementById("myTable").rows.length
 
 function prevPage()
@@ -68,6 +68,8 @@ window.onload = function() {
     changePage(current_page);
 };
 
+
+
 // for searching in first column
 function myFunction() {
     var input, filter, table, tr, td, i, txtValue;
@@ -89,8 +91,8 @@ function myFunction() {
 }
 
 
-// for sorting table
 
+// for sorting table
 th = document.getElementsByTagName('th');
 
 for(let c=0; c < th.length; c++){
