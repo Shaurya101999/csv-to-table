@@ -1,6 +1,9 @@
 const mongoose = require('mongoose') ;
+const env = require('./enviroment');
 
-mongoose.connect('mongodb://localhost/csv_development');
+const url = env.db ;
+
+mongoose.connect(url);
 
 const db = mongoose.connection ;
 

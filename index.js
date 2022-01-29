@@ -1,6 +1,7 @@
 const express = require('express') ;
 const port = process.env.PORT || 8000 ;
 const app = express() ;
+const env = require('./config/enviroment');
 
 const bodyParser = require('body-parser') ;
 
@@ -25,7 +26,7 @@ app.set('layout extractStyles' ,'true')
 app.set('view engine','ejs');
 app.set('views','./views');
 
-app.use(express.static('./assets'));
+app.use(express.static(__dirname+'/'+ env.asset_path));
 app.use('/',require('./routes'));
 
 app.listen(port, (err)=>{
