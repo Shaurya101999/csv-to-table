@@ -6,9 +6,11 @@ var {parse} = require('csv-parse');
 module.exports.open = (req, res)=>{
     let checkHeader = 0; 
     let path = req.query.path;
-    console.log(`File path : ${path}`);
+
+    // console.log(`File path : ${path}`);
     // return res.redirect('back');
     // console.log(req.params);
+    
     var csvData=[];
     var csvHeader =[];
     fs.createReadStream(path)

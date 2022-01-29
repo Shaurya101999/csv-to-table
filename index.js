@@ -25,6 +25,7 @@ app.set('layout extractStyles' ,'true')
 app.set('view engine','ejs');
 app.set('views','./views');
 
+app.use(express.static('./assets'));
 app.use('/',require('./routes'));
 
 app.listen(port, (err)=>{

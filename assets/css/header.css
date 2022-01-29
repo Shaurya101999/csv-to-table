@@ -1,0 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@1,700&family=Pacifico&display=swap');
+nav{
+    background-color: rgb(241, 232, 227);
+    padding: 2vw;
+}
+h1{
+    font-family: 'Comic Neue', cursive;
+font-family: 'Pacifico', cursive;
+}
